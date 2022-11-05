@@ -1,0 +1,39 @@
+.swiper-button-next {
+  background-image: url(../../../../assets/images/team/right-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  position: absolute;
+  right: 0px !important;
+  background-color: #ff391171;
+  border-radius: 30px;
+  width: 10px !important;
+  height: 10px !important;
+  padding: 20px !important;
+}
+.swiper-button-next:hover{
+  background-color: #ff3911;
+}
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(../../../../assets/images/team/left-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0px !important;
+  background-position: center;
+  background-color: #ff391171;
+  border-radius: 30px;
+  width: 10px !important;
+  height: 10px !important;
+  padding: 20px !important;
+}
+.swiper-button-prev:hover{
+  background-color: #ff3911;
+}
+.swiper-button-prev::after {
+  display: none;
+}
