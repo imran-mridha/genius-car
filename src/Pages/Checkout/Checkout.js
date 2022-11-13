@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import CheckoutBanner from './CheckoutBanner';
 
 const Checkout = () => {
   const { user } = useContext(AuthContext);
@@ -51,17 +52,19 @@ const Checkout = () => {
   }
   return (
     <div className='container mx-auto my-20'>
-      <h2 className='text-3xl mb-4'>Order about: {title}</h2>
-      <form onSubmit={habdleOrderPlace}>
+      <div>
+        <CheckoutBanner service={service} />
+      </div>
+      <form className='mt-20 w-11/12 mx-auto' onSubmit={habdleOrderPlace}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <input type="text" name="firstName" placeholder="First Name" className="input input-bordered w-full" />
           <input type="text" name="lastName" placeholder="Last Name" className="input input-bordered w-full" />
           <input type="text" name="yourPhone" placeholder="Your Phone" className="input input-bordered w-full" />
           <input type="email" defaultValue={user?.email} placeholder="Your Email" className="input input-bordered w-full" />
         </div>
-        <textarea name="message" className="textarea w-full textarea-bordered mt-10" placeholder="Message"></textarea>
+        <textarea name="message" className="textarea w-full h-40 textarea-bordered mt-10" placeholder="Message"></textarea>
         {/* <button className="btn btn-warning">Warning</button> */}
-        <input className="btn btn-warning mt-5" type="submit" value="Order Confirm" />
+        <input className="btn bg-theme-default hover:bg-theme-default border-none mt-5 w-full" type="submit" value="Order Confirm" />
       </form>
     </div>
   );

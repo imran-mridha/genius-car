@@ -3,7 +3,6 @@ import Main from "../../Layout/Main";
 import Checkout from "../../Pages/Checkout/Checkout";
 import Home from "../../Pages/Home/Home/Home";
 import Service from "../../Pages/Home/Services/Service/Service";
-import Services from "../../Pages/Home/Services/Services/Services";
 import Login from "../../Pages/Login/Login";
 import Orders from "../../Pages/Orders/Orders/Orders";
 import Register from "../../Pages/Register/Register";

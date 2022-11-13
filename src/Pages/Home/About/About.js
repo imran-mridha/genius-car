@@ -21,7 +21,7 @@ const About = () => {
           <p className="pb-6">the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
           <Link
             to="/"
-            class="font-semibold transition-colors duration-200 text-white text-lg border border-theme-default bg-theme-default rounded-md py-3 px-6"
+            className="font-semibold transition-colors duration-200 text-white text-lg border border-theme-default bg-theme-default rounded-md py-3 px-6"
             aria-label="Discover More"
             title="Discover More"
           >

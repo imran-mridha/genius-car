@@ -28,7 +28,7 @@ const Products = () => {
       <div className='more-services text-center'>
         <Link
           to="/"
-          class="font-semibold transition-colors text-theme-default duration-200  text-lg border border-theme-default bg-transparent hover:bg-theme-default hover:border-theme-default hover:text-white rounded-md py-3 px-6"
+          className="font-semibold transition-colors text-theme-default duration-200  text-lg border border-theme-default bg-transparent hover:bg-theme-default hover:border-theme-default hover:text-white rounded-md py-3 px-6"
           aria-label="Discover More"
           title="Discover More"
         >

@@ -23,7 +23,7 @@ const BannerItem = ({ slide }) => {
       <div className="absolute flex flex-col md:flex-row gap-5 justify-start transform -translate-y-1/2 w-2/3 left-10 md:left-24 top-3/4">
         <Link
           to="/"
-          class="font-semibold transition-colors duration-200 text-white text-lg border border-theme-default bg-theme-default rounded-md py-3 px-6"
+          className="font-semibold transition-colors duration-200 text-white text-lg border border-theme-default bg-theme-default rounded-md py-3 px-6"
           aria-label="Discover More"
           title="Discover More"
         >
@@ -31,7 +31,7 @@ const BannerItem = ({ slide }) => {
         </Link>
         <Link
           to="/"
-          class="font-semibold transition-colors duration-200 text-white text-lg border border-white bg-transparent hover:bg-theme-default hover:border-theme-default rounded-md py-3 px-6"
+          className="font-semibold transition-colors duration-200 text-white text-lg border border-white bg-transparent hover:bg-theme-default hover:border-theme-default rounded-md py-3 px-6"
           aria-label="Discover More"
           title="Discover More"
         >
